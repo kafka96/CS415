@@ -1,7 +1,4 @@
 <?php
-session_start();
-$myAddress = $_SESSION['myAddress'];
-$destination = $_SESSION['destination'];
 function get_coordinates($myAddress)
 {
     $address = urlencode($myAddress);
@@ -46,8 +43,8 @@ function GetDrivingDistance($lat1, $lat2, $long1, $long2)
     return array('distance' => $dist, 'time' => $time);
 }
 
-    $coordinates1 = get_coordinates($myAddress);
-    $coordinates2 = get_coordinates($destination);
+    $coordinates1 = get_coordinates('Bulbulderesi cd. Ankara');
+    $coordinates2 = get_coordinates('Kurtulus metro duragi Ankara');
         if ( !$coordinates1 || !$coordinates2 )
     {
         echo 'Bad address.';
@@ -57,5 +54,22 @@ function GetDrivingDistance($lat1, $lat2, $long1, $long2)
         $dist = GetDrivingDistance($coordinates1['lat'], $coordinates2['lat'], $coordinates1['long'], $coordinates2['long']);
         echo 'Distance: <b>'.$dist['distance'].'</b><br>Travel time duration: <b>'.$dist['time'].'</b>';
     }
-
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UberPack|Route Details</title>
+</head>
+<body>
+   <form method = "post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+  Your address:<br>
+  <input type="text" name="myPosition" >
+  <br>
+  Destination:<br>
+  <input type="text" name="Destination">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

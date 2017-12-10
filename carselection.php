@@ -16,7 +16,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-3">
-      <h3><a href="economic.php">Economic Service</a></h3>
+      <h3><a href="Economic.php">Economic Service</a></h3>
       <p>Simple transportation with economic cars</p>
       <img src="economy.jpg" alt="Economy" width="250" height="277">
     </div>
@@ -32,7 +32,7 @@
     </div>
     <div class="col-sm-3">
       <h3><a href="timed.php">Timed Service</a></h3>        
-      <p>Customer is able to select delivery time</p>
+      <p>Customer is able to select pick up time</p>
       <img src="clock.jpg" alt="clock" width="250" height="277">
     </div>
   </div>
