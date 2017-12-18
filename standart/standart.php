@@ -1,12 +1,8 @@
-
-<?php
-	
-?>
 <!DOCTYPE html>
 <html>
 <body>
 
-<!-- <p id="demo">Click the button to get your position.</p>
+<p id="demo">Click the button to get your position.</p>
 
 <button onclick="getLocation()">Try It</button>
 
@@ -48,7 +44,7 @@ function showError(error) {
             break;
     }
 }
-</script> -->
+</script>
 <h3>Choose where you want to go</h3>
 <form action="showprice.php">
   Destination:<br>

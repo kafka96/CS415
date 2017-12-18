@@ -1,5 +1,12 @@
 <?php
+  session_start();
+  $foodPrice = 18;
+  $totalCost = 4.3 * 1.4 + 18.6;
+  $_SESSION['food'] = true;
+  if($_SESSION['timedFood'] == true){
+      include 'time.php';
 
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,11 +19,13 @@
 	<title>Trip</title>
 </head>
 <body>
-<h2>Trip costs ...USD. Press Accept to continue or Cancel to use another service</h2><br>
  <div class ="container">
  <div class="col-sm-4">
-      <h3><a href="anotherpage.php">Accept</a><br></h3>
-      <p>If you press this button, than you accept the trip and the price will be cut from your credit card connected to UberPack </p>
+        <p>The food costs <?php echo $foodPrice; ?> TL. Transportation costs <?php echo $totalCost;?> TL.</p>
+
+      <h3><a href="acceptFood.php">Accept</a><br></h3>
+      <p></p>
+      <p>If you press this button, than you fullfill your order and the price will be cut from your credit card connected to UberPack </p>
       <p> </p>
     </div>
     <div class="col-sm-4">
@@ -25,5 +34,6 @@
       <p>Meanwhile you can check our other services 	</p>
     </div>
  </div>   
+
 </body>
 </html>

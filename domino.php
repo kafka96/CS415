@@ -1,3 +1,9 @@
+<?php
+session_start();
+$_SESSION['foodPrice'] = 18.6;
+$_SESSION['restaurantDistance'] = 2.3;
+$_SESSION['totalCost'] = 2.3 * 1.4 + 18.6;
+?>
 <!DOCTYPE html>
 <html>
 <head>

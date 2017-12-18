@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="jumbotron text-center">
-  <h2>Welcome to UberPack Eat Service</h2>
+  
   <h3>Choose among the restaurants in the list. Click them to check their menus</h3><br>
   <a href="domino.php">Domino's Pizza</a><br>
   <a href="">Acil Rio</a><br>
@@ -34,3 +34,7 @@
 </div>
 </body>
 </html>
+<?php
+  session_start();
+
+?>

@@ -54,25 +54,25 @@ function GetDrivingDistance($myAddress, $destination)
 
     
     $dist = GetDrivingDistance($myAddress,$destination);
-    echo 'Distance: <b>'.$dist['distance'];
+    echo 'Distance: <b>'.$dist['distance'].'</b><br>Travel time duration: <b>'.$dist['time'].'</b>';
     $_SESSION['distance'] = $dist['distance'];
     $_SESSION['time'] = $dist['time'];
     $priceperkm = $_SESSION['price'];
     echo "<br>";
-    echo "Cost of the service is ".$priceperkm * $dist['distance']. " TL";
+    echo "Cost of the trip is ".$priceperkm * $dist['distance']. " TL";
     echo "<br>";
-    //echo " A driver was found. Do you accept the trip?";
+    echo " A driver was found. Do you accept the trip?";
     //session_destroy();
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Uber Pack | Distance Calculator</title>
 </head>
 <body>
     <br>
-    <a href="acceptcargo.php" class="button">Accept</a>
-    <a href="index.php" class="button">Deny</a>
+    <a href="accept.php" class="button">Accept</a>
+    <a href="../index.php" class="button">Deny</a>
 
 
 </body>

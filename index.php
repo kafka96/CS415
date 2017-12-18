@@ -27,7 +27,7 @@
       <p>Best fares available</p>
     </div>
     <div class="col-sm-4">
-      <h3><a href="restaurant.php">UberPack Food Service</a><br></h3>
+      <h3><a href="foodservice.php">UberPack Food Service</a><br></h3>
       <p>You're hungry? Don't worry. </p>
       <p>Choose among the best restaurants in the area with taxi service included. </p>
     </div>
